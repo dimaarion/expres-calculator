@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./styles.css";
 import Equal from "./Equal";
 import Squaremeter from "./Squaremeter";
+import Result from "./Result";
 export default function App() {
   const [result, setResult] = useState(1);
 
@@ -20,7 +21,7 @@ export default function App() {
     <div className="expres-calculator container">
       <div className="entry ">
         <div className="row">
-          <div className="col" style={{ fontSize: "40pt" }}>
+          <div className="col text-end" style={{ fontSize: "30pt" }}>
             sdvsdvs
           </div>
           <div className="col-3 position-relative">
@@ -39,8 +40,10 @@ export default function App() {
           <div className="col-1 text-center">
             <Equal />
           </div>
-          <div className="col-1 p-0 position-relative">
-            <div className="position-absolute result">{result}</div>
+          <div className="col-1 position-relative">
+            <div className="position-absolute result">
+              <Result result={result} />
+            </div>
           </div>
         </div>
       </div>

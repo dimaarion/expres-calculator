@@ -18,20 +18,11 @@
   font-size: 30pt;
 }
 .expres-calculator .result {
-  font-size: 50pt;
-  font-weight: bold;
-  top: 0px;
-  bottom: 0px;
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  height: 105px;
-  width: 100px;
 }
 
 .expres-calculator .meter {
   margin: auto;
-  right: 10%;
+  right: 0px;
   top: 0px;
   bottom: 0px;
 }

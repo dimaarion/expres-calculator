@@ -1,7 +1,7 @@
 export default function Squaremeter() {
   return (
     <div className="position-absolute meter">
-      <svg width="100" height="66">
+      <svg width="70" height="66">
         <text
           x="0"
           y="45"
