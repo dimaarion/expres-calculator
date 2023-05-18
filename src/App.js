@@ -18,11 +18,11 @@ export default function App() {
     return setResult(num * number);
   }
   return (
-    <div className="expres-calculator container">
+    <div className="expres-calculator container-fluid">
       <div className="entry ">
         <div className="row">
-          <div className="col text-end" style={{ fontSize: "30pt" }}>
-            sdvsdvs
+          <div className="col text-left" style={{ fontSize: "30pt" }}>
+            Введите квадратные метры окна
           </div>
           <div className="col-3 position-relative">
             <div className="enact">
