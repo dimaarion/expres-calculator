@@ -10,9 +10,6 @@
   margin: auto;
   top: 0px;
   bottom: 0px;
-  left: 0px;
-  right: 0px;
-  width: 300px;
   height: 50px;
 }
 .expres-calculator input {
@@ -31,6 +28,10 @@
   height: 105px;
   width: 100px;
 }
-.expres-calculator .enact {
-     flex: 20 0 0% !important;
+
+.expres-calculator .meter {
+  margin: auto;
+  right: 10%;
+  top: 0px;
+  bottom: 0px;
 }
