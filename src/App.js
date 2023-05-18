@@ -40,10 +40,13 @@ export default function App() {
           <div className="col-1 text-center">
             <Equal />
           </div>
-          <div className="col-1 position-relative">
+          <div className="col-2 position-relative">
             <div className="position-absolute result">
               <Result result={result} />
             </div>
+          </div>
+          <div className="col-1" style={{ fontSize: "30pt" }}>
+            уе.
           </div>
         </div>
       </div>
