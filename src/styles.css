@@ -1,7 +1,8 @@
 .expres-calculator {
   height: 300px;
   width: 100%;
-  background-color: blueviolet;
+  background: rgba(1, 149, 65, 0.1);
+  background-blend-mode: normal;
   position: relative;
 }
 
@@ -15,17 +16,97 @@
   width: 80%;
   height: 50px;
 }
+
 .expres-calculator input {
   width: 100%;
   height: 100%;
   font-size: 30pt;
+  z-index: 5;
+  position: relative;
 }
-.expres-calculator .result {
-}
+
+.expres-calculator .result {}
 
 .expres-calculator .meter {
   margin: auto;
-  right: 0px;
+  left: 150px;
   top: 0px;
   bottom: 0px;
+  z-index: 6;
 }
+
+.expres-calculator .equal {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 220px;
+  width: 100%;
+}
+
+.expres-calculator .currency {}
+
+.expres-calculator .enact {
+  width: 200px;
+}
+
+.expres-calculator .description {
+  position: absolute;
+  bottom: 30px;
+  font-size: 20pt;
+}
+
+.expres-calculator .redirect-calculator {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 324px;
+  height: 88px;
+  border-radius: 15px;
+  background: #009688;
+  background-blend-mode: normal;
+}
+.expres-calculator .redirect-calculator:hover{
+  background: #027d72;
+}
+.expres-calculator .redirect-calculator a {
+  position: absolute;
+  bottom: 0px;
+  height: 90px;
+  -webkit-text-stroke: solid 1px #808080;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 28.12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.expres-calculator .title{
+  text-align: end;
+}
+
+@media (max-width: 1294px) { 
+  .expres-calculator .description {
+    position: absolute;
+    top: 30px;
+  }
+  .expres-calculator .title{
+    text-align: left;
+  }
+
+ }
+ @media (max-width: 670px) { 
+  
+  .expres-calculator{
+    height: 600px;
+  }
+  .expres-calculator .equal {
+    position: absolute;
+    top: 90px;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+  }
+ }
